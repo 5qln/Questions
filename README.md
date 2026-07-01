@@ -39,3 +39,15 @@ and return question, runs the membrane gate, and — only after your attestation
 Every question here is dedicated to the public domain under [CC0 1.0](LICENSE).
 
 *The trail is private. The question is yours.*
+
+## Terminology
+
+Two symbols appear throughout this commons and in the gate's output:
+
+- **X** — the *published question*: the question that opened an /idk cycle. It is
+  the file's level-1 heading (`# …`). After publishing, X is CC0 public domain.
+- **∞0′** — the *return question*: the question the cycle could not have asked
+  before it began. It is the `## ∞0' — The Return Question` heading.
+
+Only **X** and **∞0′** may cross the membrane into this commons. Nothing from the
+private trail (α, Z, ∇, B″, cycle numbers, the Codex seal) may appear here.
