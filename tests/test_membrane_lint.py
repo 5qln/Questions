@@ -91,6 +91,19 @@ def test_wrong_shard_path_flagged():
     assert "shard path does not match" in " | ".join(labels)
 
 
+# ---- H11: an ancestor dir named "questions" must not break the shard check ----
+def test_ancestor_dir_named_questions_does_not_break_shard():
+    # Regression: when the repo is checked out into a directory literally named
+    # "questions" (or any such ancestor), the shard check must still anchor to
+    # the commons questions/ subdir, not the ancestor.
+    heading_text = "Does the shard survive an ancestor of the same name?"
+    want = ml.content_hash(heading_text)
+    body = (f"---\nspdx: CC0-1.0\ncontent_hash: sha256:{want}\n---\n\n"
+            f"# {heading_text}\n\n*CC0*\n\n## ∞0' — R\n\nWho?\n")
+    relname = f"/home/user/questions/questions/{want[:2]}/{want[2:4]}/{want}.md"
+    assert ml.check(body, relname) == []
+
+
 # ---- clean happy path still passes end-to-end ----
 def test_clean_crafted_file_passes(tmp_path):
     heading_text = "Is the map the territory when no one is walking?"

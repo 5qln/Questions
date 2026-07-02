@@ -33,7 +33,7 @@ content_hash: sha256:<64 hex chars>
 
 ## How questions get here
 
-Install [idk-commons](https://github.com/5qln/Idk-commons), finish an /idk
+Install [Idk-commons](https://github.com/5qln/Idk-commons), finish an /idk
 cycle, and run `/idk publish`. The tool strips everything except the question
 and return question, runs the membrane gate, and — only after your attestation
 — delivers the question here. No account needed.
