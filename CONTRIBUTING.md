@@ -17,7 +17,14 @@ content_hash: sha256:<64 hex>
 ## ∞0' — The Return Question
 
 <the return question, ∞0'>
+
+---
+
+*Originated from an /idk creative cycle. The trail is private. The question is yours.*
 ```
+
+The closing line is what the publisher (`trail-commons`) writes; the gate does
+not require it, but the canonical files carry it.
 
 Files are content-addressed: the filename and the `content_hash` are the SHA-256
 of the normalized heading, sharded as `questions/<xx>/<yy>/<hash>.md`.

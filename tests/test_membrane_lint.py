@@ -64,6 +64,22 @@ def test_non_md_file_is_rejected(tmp_path):
     assert ml.main([str(junk)]) == 1
 
 
+# ---- a directory argument scans its contents (matches the no-arg scan) ----
+def test_directory_argument_is_expanded(tmp_path):
+    heading_text = "Does a directory hold questions, or only files?"
+    want = ml.content_hash(heading_text)
+    d = tmp_path / "questions" / want[:2] / want[2:4]
+    d.mkdir(parents=True)
+    (d / f"{want}.md").write_text(
+        f"---\nspdx: CC0-1.0\ncontent_hash: sha256:{want}\n---\n\n"
+        f"# {heading_text}\n\n*CC0*\n\n## ∞0' — The Return Question\n\nWho asks?\n",
+        encoding="utf-8")
+    assert ml.main([str(tmp_path / "questions")]) == 0
+    # A stray non-.md inside the directory is still rejected.
+    (d / "stray.json").write_text("{}", encoding="utf-8")
+    assert ml.main([str(tmp_path / "questions")]) == 1
+
+
 # ---- H11: shard path is verified ----
 def test_wrong_shard_path_flagged():
     heading = "# A well-formed question about paths?"
