@@ -25,6 +25,10 @@ content_hash: sha256:<64 hex chars>
 ## ∞0' — The Return Question
 
 <the question that could not have been asked before>
+
+---
+
+*Originated from an /idk creative cycle. The trail is private. The question is yours.*
 ```
 
 ## How questions get here
@@ -51,3 +55,13 @@ Two symbols appear throughout this commons and in the gate's output:
 
 Only **X** and **∞0′** may cross the membrane into this commons. Nothing from the
 private trail (α, Z, ∇, B″, cycle numbers, the Codex seal) may appear here.
+
+## The three repositories
+
+One membrane, three repos — each holds one part and only that part:
+
+| Repo | Role |
+| --- | --- |
+| [5qln/Idk](https://github.com/5qln/Idk) | **The practice.** `/idk` — the gate-enforced cycle a human walks with an agent. Trails stay there, private. |
+| [5qln/Idk-commons](https://github.com/5qln/Idk-commons) | **The transport.** `trail-commons` — strips a finished cycle to X and ∞0′, gates it, and carries it here only after the human attests. |
+| [5qln/questions](https://github.com/5qln/questions) | **The commons of record.** This repo. Questions only, CC0, no authors. |

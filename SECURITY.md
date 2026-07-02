@@ -13,5 +13,3 @@ that would republish the very content we are trying to contain.
 
 - Acknowledgement within **3 business days**.
 - If a leak is confirmed, the offending content is removed and its hash rotated.
-
-Encrypt sensitive reports with our PGP key: `TODO: publish fingerprint here`.
