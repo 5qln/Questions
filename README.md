@@ -65,3 +65,8 @@ One membrane, three repos — each holds one part and only that part:
 | [5qln/Idk](https://github.com/5qln/Idk) | **The practice.** `/idk` — the gate-enforced cycle a human walks with an agent. Trails stay there, private. |
 | [5qln/Idk-commons](https://github.com/5qln/Idk-commons) | **The transport.** `trail-commons` — strips a finished cycle to X and ∞0′, gates it, and carries it here only after the human attests. |
 | [5qln/questions](https://github.com/5qln/questions) | **The commons of record.** This repo. Questions only, CC0, no authors. |
+
+For the full picture — how a question moves through all three and what never
+crosses the membrane — see [`SYSTEM.md`](https://github.com/5qln/Idk/blob/main/SYSTEM.md).
+Maintaining this repo? Read [`AGENTS.md`](AGENTS.md) first — everything here is
+public, permanent, and CC0.
